@@ -1,0 +1,562 @@
+,,,,,,,,,,,,
+Article Title,Author,Year,Problem Statement,Addressed Issues,Key argument,Dataset & Tools Used,Context,Methodological Philosophy,Research Method,Findings,Research Gaps,Notes/Remarks
+Dynamic Stock Correlation Network,"Yuta Araia,
+ Takeo Yoshikawab, 
+Hiroshi Iyetomic",2015,"To analyze and uncover the dynamic correlations between different stocks
+in the S&P 500 stock market, using Complex Principal Component Analysis 
+(CPCA) and Random Matrix Theory (RMT), and to detect communities of 
+comoving stocks within the correlation network.","• Dynamic Correlation Analysis - Importance of 
+understanding how dynamic correlations change over time
+• Novel Methodology explored - combines CPCA + RMT
+• Community Detection - to identify different communities of
+ comoving stocks within a correlation network","By employing CPCA and RMT, it is possible to uncover 
+and analyze dynamic correlations among stocks in the S&P500
+that can help detect stable communities of comoving stocks","• S&P 500 Index from 2008-2011 data
+
+• Complex Principal Component Analysis (CPCA)
+Random Matrix Theory (RMT)
+Network Analysis
+Community Detection Algorithms","The context of the paper lies within
+ the field of quantitative finance
+ and complex systems analysis.
+the authors address the challenge 
+of analyzing dynamic correlations
+ among stock prices.","• Complex Systems Analysis - recognizes that
+financial markets are intricate systems
+influenced by many agents and factors.
+• Time Series Complexity - CPCA treats time
+series as complex numbers by using Hilbert
+transformation
+• Statistical Rigor - to separate genuine 
+correlations from noisy financial data","1. CPCA - Transforms time series data into complex numbers
+using Hilbert transformation. Includes correlations of both
+amplitude and phase information
+2. RMT - statistical framework to distinguish genuine correlation
+from noisy data. Asseses significance of correlations in the analysis. 
+This helps make meaningful information from random fluctuations
+3. Network Analysis - Correlation network is built to represent 
+relationships between stocks. Stocks - Nodes, Strength of Correlation - 
+weighted edges
+4. Community Detection - Related algorithms used to partition network
+into groups of stocks that exhibit similar correlation patterns allowing
+cluster formation
+5. Statistical Analysis - Various statistical measures employed to
+assess significance of observed correlations, stability of stocks and to
+quantify relationships between them.","• Successfully applied CPCA to stock market data
+to extract dynamic correlations between price
+fluctuations.
+• Paper distinguishes genuine dynamic correlations
+in financial data from random noise
+• A correlation network is constructed where stocks
+are linked based on strength of their correlations
+• Possible communities of comoving stocks are
+detected within the network
+• The paper finds that the community structure of
+the stock correlation network remains stable across
+different threshold values for phase differences.
+(stability indicates presence of consistent relationships
+among stocks within communities)
+• Stocks belonging to different communities tend to
+exhibit negative correlations (complex & non-intuitive)
+• Practical applications - risk management and
+portfolio optimization","• Dynamic nature of correlations
+• Causality and Lead-Lag relationships
+• External factors (global events)
+
+Overall the paper lays the foundation
+for studying dynamic correlations in
+financial markets, but there are 
+opportunities for further research to 
+deepen understanding and practical
+applications of these findings","• Interesting interdisciplinary approach using 
+CPCA and RMT.
+• Network analysis provides a visual & 
+intuitive way to understand relationships
+betweek stocks
+• Community structure - stable throughout
+• Practical relevance for investors, asset
+managers, risk analysts?
+• Details of dataset not provided
+• Potential avenues for future research?
+• How this can aid in risk mgmt and portfolio
+optimization?
+"
+"Predicting stock market movements using 
+network science: an information theoretic approach",Minjun Kim and Hiroki Sayama,2017,"The problem addressed in this paper is the challenge of accurately predicting
+ the future movements of the S&P 500 in the stock market. The study aims to 
+develop a novel prediction method by constructing time-series complex networks.","• Complexity of Stock Market Predictions - paper highlights 
+challenges posed by stock markets
+• Flash Crashes & High-Frequency Trading - 2010 incident - 
+significant threat, emphasizes to predict and prevent such 
+events
+• Network science - to analyse stock market networks. Talks
+about lack of research in using network analysis for 
+forecasting stock market movements (useful for better accuracy)
+","The key argument of the paper is that utilizing network science ie.,
+construction and analysis of time-series complex networks of 
+S&P500 Index based on mutual information. 
+The paper contends that changes in strength distributions and 
+network measurements within these networks can be used to
+predict stock market fluctuations and improve prediction models
+accuracy.","• S&P 500 Index from Sept 22, 2016 - Oct 11, 2016
+consisting of 89 consecutive trading hours
+• Stock price of 475 companies were taken
+
+• Python libraries - networkX, scikit-learn, and 
+statmodels
+• Hot deck imputation data
+• Statistical & Regression analysis tools to assess
+performance metrics","The paper's context lies particularly 
+in the challenge of predicting the 
+movements of the S&P 500 Index. 
+Paper explores application of network
+science and data analysis techniques
+to construct a network and analyse 
+their mutual information.
+Goal - to improve accuracy of 
+predictions regarding future behaviour
+of S&P 500","• Data-Driven approach - use of real-world data
+• Network Science - construction of time-series
+complex networks - representing interdependencies
+among companies
+• Statistical Analysis - calculation of node strength 
+distributions, centrality measures & modularity
+• Model building - ARIMA models
+• Empirical testing - linear & polynomial regression
+• Iterative process - data gathering and pre-processing,
+developing metrics and evaluating predictive models.","1. Data Gathering
+2. Data Preprocessing
+3. Network Construction - time-series complex networks
+4. Statistical Analysis - centrality measures, modularity
+5. Metric Analysis - strength of distributions
+6. Predictive Modeling (ARIMA)
+7. Regression Analysis - linear and polynomial","• Importance of strength distributions provides valuable 
+information about network's future movements
+• Metrics such as network centrality and modularity 
+capture network dynamics indicative of future stock
+movements
+• Kullback-Leibler Divergence (KLD) - metric to measure
+divergence of strength distribution from prior
+distributions perform well in predicting absolute changes
+in S&P500 (KLD-9 -> high correlation with absolute changes)
+• ARIMA models enhances accuracy in prediction
+• Relationship between developed metrics and S&P changes
+is not linear - quadratic pattern
+• Practical for financial market policy and quantitative investors","• Limited time period dataset
+• Limited only to the S&P 500 as a single
+stock market index
+• Incorporating only internal factors, not
+included external economic factors, news
+sentiment and geopolitical events
+• ARIMA - baseline model","• Accuracy and reliability of predictions is 
+highly dependent on the availability and 
+quality of data
+• Dynamic nature of stock markets must be
+considered
+• How useful for policymakers and investors?
+• Highlights the intricate relationships of 
+non linear patterns
+"
+"Uncovering dynamic stock return correlations with
+ multilayer network analysis","Danielle N. Rubin, 
+Danielle S Bassett
+ and Robert Ready",2019,"The paper aims to investigate correlations of stock returns within 30 industry
+portfolios from 1927 to 2014 and to understand the changing mesoscale network 
+structure of the correlations, to understand the factors influencing the evolution","• Dynamics of Stock Return Correlations 
+• Mesoscake Network Analysis - identfies closely related clusters
+• Flexibility Metric - allows for a quantitative assessment
+• Economic Interpretation - observes shifts in the economy","Key argument is applying network science techniques to analyse time-varying
+correlations of stock returns among industry portfolios.
+The changes reflect shifts in the US economy and industry dynamics, that 
+are not explained by traditional measures like average correlations","• Daily stock return time series for 30 different industry
+portfolios spanning from 1927-2014
+
+• Network Science methods
+• Multilayer Network Analysis
+• Community Detection
+• Statistical Testing","It addresses the challenge of understanding 
+how correlations of stock returns among
+different industry portfolios evolve over time.
+Correlations - significant impact on portfolio
+diversification, risk mgmt & investment decisions","• Substantial dataset spanning several decades
+• Network Science - correlation - edges in a network
+• Temporal Perspective - stock markets are dynamic
+• Statistical Inference 
+• Economic Interpretation - relates changes to shift in the 
+US economy and industry dynamics","1. Network Science - representing network
+2. Community Detection
+3. Temporal Analysis - time-series + mathematical modeling
+4. Statistical Testing - random permutations using p-values
+5. Robustness Analysis - resolution parameters
+6. Flexibility Metric - uses mathematical formulas based on number of 
+changes","• Evolution of industry communities - composition evolves
+significantly over time
+• Stability before 1960 - from 1927-64 the industry - relatively
+stable.
+• Major shift after 1970 - flexibility increased, more dynamity
+• Economic shifts - Rise of financial sector reflected in formation
+of Financial and Banking Industry community
+• Oil and Natural gas - significant community in correlation with 
+global oil price volatility","• Does not delve deep into underlying causal 
+mechanisms driving the changes
+• Focuses only on the US stock market, no 
+global perspective
+• Only talks about IT and Energy sector, more
+detailed sectoral analysis can be done
+• Role of govt policies, regulations in shaping
+industry could be another approach ","• Paper presents a valuable application of 
+network science to financial markets, 
+providing insights into the dynamics of 
+industry stock return correlations over time.
+• Could delve into causes of these changes
+• Doesn't address individual stocks?"
+"Correlation Network Analysis in the 
+Stock Exchange of Thailand","Nuttapol Thitaweera and
+Sukree Sinthupinyo",2021,"The paper focuses on analyzing stock relationships in Thailand's top hundred stocks 
+by market capitalization using dynamic time warping (DTW) and network analysis.
+It aims to develop a method for assessing stock correlations, 
+addressing stock market complexity and volatility.","Dynamic Time Warping (DTW)-  To measure non-linear similarity
+in stock price movements.
+Network Centrality:-Identifying influential stocks within the network.
+Community Detection:-Revealing distinct patterns in 
+stock price movements within communities.","The research paper argues that employing dynamic time warping
+ (DTW) for stock correlation analysis offers a more effective 
+non-linear approach, enabling a deeper understanding of stock 
+market relationships. Network analysis techniques, coupled with DTW, 
+unveil valuable insights into stock network dynamics, such as 
+identifying influential stocks and detecting hidden community structures.","The research utilizes daily closing price data of stocks 
+from July 2018 to June 2020, collected from 
+Yahoo Finance.
+
+The paper employs Gephi for network visualization and 
+analysis, dynamic time warping (DTW) for similarity
+ measurement, and various network centrality measures
+ for assessing stock importance.","The context of the paper is particularly
+utilizing dynamic time warping (DTW) 
+and network analysis techniques to 
+uncover patterns, correlations, and 
+community structures in stock price
+ movements.","Data-Driven Approach: The research relies on empirical 
+stock price data to derive insights, emphasizing the 
+importance of real-world observations.
+Quantitative Analysis: It employs quantitative methods, 
+including time series decomposition, DTW, and network
+analysis, to extract meaningful patterns and 
+relationships from the data.
+Interdisciplinary Approach: The paper combines 
+techniques from finance, data analysis, and network 
+science to gain a comprehensive understanding of 
+stock market dynamics.","1. Time Series Decomposition
+2. Dynamic Time Warping (DTW)
+3. Graph Theory
+4. Network Centrality Measures
+5. Community Detection Algorithms
+6. Data Visualization (using Gephi)
+7. Empirical Data Analysis (Stock Price Data from Yahoo Finance)
+
+
+
+
+","• The study utilized dynamic time warping (DTW) to measure 
+stock price similarity, revealing non-linear relationships among
+stocks.
+• Network analysis unveiled a complex structure within Thailand's
+stock market, with stocks forming distinct communities based 
+on price movement patterns.
+• Stocks like ADVANC, KTC, MINT, and CENTEL exhibited 
+high centrality, indicating their significance in the network.
+• Different sectors, such as Agribusiness, Banking, and Energy 
+& Utilities, showed varying levels of interconnection 
+and influence.
+• The paper identified community characteristics, including
+sideways trends, uptrends, seasonal tendencies, and
+event-driven movements.
+• Notably, PTT, despite its high market capitalization, 
+did not rank among the top stocks in terms of centrality 
+or influence.
+• The research highlighted the potential of DTW and network 
+analysis in understanding and visualizing stock market dynamics.","• Limited Time Frame (July 2018 to June 2020)
+• Exclusion of Additional Data Sources
+• Neglect of External Factors
+• Absence of Predictive Analysis","• Effective DTW for non-linear relationships.
+• Valuable insights from network analysis.
+• Data limitations, suggesting data source 
+diversification.
+• Encouraging future research in predictive 
+modeling and external factors."
+"Structure and dynamics of financial 
+networks by feature ranking 
+method","Mahmudul Islam Rakib,
+Ashadun Nobi,
+Jae Woo Lee",2021,"The paper addresses the challenge of reconstructing financial networks using a
+novel feature ranking approach in machine learning. It aims to better understand 
+financial market dynamics, identify influential stocks, and detect potential market 
+crashes using network analysis and entropy.","• Dynamic Thresholds: Introduces dynamic thresholds from feature 
+ranking matrices for financial crisis detection, including the dot-com 
+bubble and global financial crisis.
+
+• Influential Companies: Identifies key influential companies, 
+notably in energy, finance, and communication sectors, during market crises.
+
+• Entropy Indicator: Utilizes increasing entropy as a market stability 
+indicator, signaling potential crises and offering insights into market
+dynamics.","The research paper argues that dynamic thresholds derived from feature ranking
+matrices can effectively identify financial crises, highlights influential companies 
+during crises, and emphasizes the utility of increasing entropy as a market 
+instability indicator.","Dataset: The research paper utilized daily closing price 
+data for 375 companies listed in the S&P 500 index from 
+1998 to 2012, sourced from Yahoo Finance.
+
+Tools: The paper employed machine learning techniques,
+specifically Random Forest and XGBoost algorithms, 
+to construct feature ranking matrices and dynamic 
+thresholds for financial crisis identification.","The paper explores financial market dynamics 
+using feature ranking matrices and dynamic 
+thresholds. It aims to identify financial crises, 
+influential companies, and market stability, 
+offering insights into crisis detection and risk 
+management.","1. Feature Ranking Approach: The research employs a 
+feature ranking method derived from machine learning 
+techniques to assess the importance of various financial
+features in predicting market behavior.
+2. Dynamic Network Analysis: It adopts a dynamic network 
+analysis approach to construct networks that capture the 
+evolving relationships between financial entities over time.
+3. Quantitative Analysis: The study emphasizes quantitative 
+analysis of financial time series data, focusing on 
+data-driven methodologies for crisis detection and
+influential company identification.
+
+","Feature Ranking: Machine learning algorithms (Random Forest, XGBoost) 
+used to create feature ranking matrices.
+Threshold Calculation: Dynamic and static thresholds derived from feature 
+ranking matrices.
+Network Construction: Creation of directed networks to visualize 
+relationships among financial entities.
+Influential Company Identification: Analysis to identify influential
+companies during market crises.
+Entropy Analysis: Use of entropy to gauge market stability and potential crises.","Dynamic thresholds vary over time, rising during financial crises like
+ the dot-com bubble and the global financial crisis.
+Certain companies, especially in energy, finance, and 
+communication services, exhibit significant influence during crises.
+The average clustering coefficient peaks during major crises, 
+indicating higher interconnectivity between companies.
+Market entropy increases before financial crashes, serving as a 
+potential indicator of impending instability.
+Modularity analysis reveals distinct community structures in the 
+market during different crises.","• Limited temporal coverage (1998-2012).
+• Need for generalization of feature ranking
+methods.
+• Lack of exploration into the impact of external 
+factors during financial crises.","• Emphasis on feature ranking for network 
+reconstruction is novel.
+• Crucial insights into market instability using 
+entropy.
+• Need for a broader dataset to enhance model 
+generalization."
+Coarse Graining on Financial Correlation Networks,"Dr. Mehmet Ali BALCI,
+Dr. Larissa Batrancea,
+Dr. Omer Akguller and 
+Dr. Anca Nichita",2022,"According to the paper,Financial networks have a natural multi-grained structure 
+that leads to different community structures at different levels.  
+
+However, they say few studies pay attention to these multi-part features
+ of financial networks.
+ In this paper, it present a geometric coarse graining method based on 
+Voronoi regions of a financial network. 
+Rather than studying the dense structure of the network, 
+they perform the analysis on the triangular maximally filtering of a financial network.","1.Coarse Graining: Coarse graining involves grouping 
+vertices into non-overlapping 
+graph communities 
+without strict topological restrictions. 
+It is used to analyze changes in granular geometry.
+
+2.Haantjes Curvature: The paper introduces the Haantjes curvature 
+as a metric for measuring the curvature of paths or trajectories 
+within a metric space, such as a network.
+ It is used to capture geometric changes in the granular structure.
+
+3.Filtering Techniques: Complete graph models in financial 
+networks can lead to challenges due to high edge weights. 
+Filtering techniques like Minimum Spanning Trees (MST), 
+Planar Maximally Filtering Graph (PMFG), and 
+Triangulated Maximally Filtered Graph (TMFG) 
+are introduced to
+ overcome this issue","In this paper, they use a discrete analogous Haantjes curvature of a curve 
+in a metric space to capture such geometric changes.
+ To examine these changes in the geometry of the coarse granule structures, 
+they looked at the discrete Haantjes curvatures of the paths that are furthest
+ from the seeding locations of the Voronoi cells.
+ During crisis situations, they detected significant changes for Borsa Istanbul,
+ London Stock Exchange, and NASDAQ.
+ The averages of discrete Haantjes curvatures were used to encode such changes.
+ Overall, the method presented in this study can serve
+ as a strong indicator of a financial network.","FTSE100 Index,BIST Index and 
+Nasdaq-100 Index from 2004 to 2015.
+
+
+Triangulated Maximally Filtered Graph (TMFG) 
+Planar Maximally Filtering Graph (PMFG)
+ Minimum Spanning Trees (MST) ","It is fundamental to analyze the granular structure
+ of a system,as well as the complex network 
+modelingof systems formed by financial agents 
+at different levels of interaction. In this study, 
+we advanced a method for 
+graining networks that model stock markets. 
+By means of this 
+coarse graining method, 
+we examined the geometrical changes in the 
+granular level of the network under 
+the impact of an economic crisis.","• The data is gathered during economical crisis from
+ Borsa Istanbul, London Stock Exchange, 
+and NASDAQ
+
+• Complex Networks: Complex networks, often represented
+ as edge-weighted graphs,are used to model real-world 
+systems, where vertices represent agents or objects, and 
+edges denote relationships between them. 
+
+• Correlation Distance and Financial Networks: Financial 
+networks,with stocks as agents, use correlation distance
+to determine the relationships between stocks based 
+on their daily price returns.
+","1.Pearson correlation
+2.Minimum Spanning Trees (MST)
+3.Triangulated Maximally Filtered Graph (TMFG)
+4.Planar Maximally Filtering Graph (PMFG)
+5.Haantjes Curvature
+6.Voronoi Diagrams","​
+
+• Network models of three different stock market indices examined. ​
+
+• To compare the topological structures of the TMFG graphs, 
+measurements such as CPL, MOL, mean LCC, and global clustering 
+coefficient, frequently used in the literature, were applied to these graphs. ​
+
+• During the crisis periods impacting the FTSE100, BIST, and 
+Nasdaq-100 indices, high oscillations were observed. ​
+
+ • Measurements alone are not strong indicators for TMFG filtering​
+
+• The most noticeable change occurred for the BIST market index 
+because VDG cells formed tighter granules. ​","• The paper does not thoroughly discuss
+the limitations and potential biases of the study, 
+such as the assumptions made, data availability,
+and the impact of the chosen correlation 
+distance function.
+• The paper focuses on the Triangulate Maximally 
+Filtering Graph (TMFG) approach for filtering 
+financial networks. However, it does not explore
+the potential impact of other filtering methods on 
+the results 
+","• Overall, the paper presents a novel approach
+ to analyzing financial correlation networks 
+and provides insights into the changes in 
+coarse grains geometry during financial stress
+• They didn't explain why it is better to see the 
+ Haantjes curvature through TMFG filtering
+thanPMFG filtering.
+• The paper does not compare the proposed 
+geometric coarse graining method with 
+existing methods or alternative approaches,
+which limits the understanding of its 
+effectiveness and advantages."
+"A Survey on Graph Neural Networks for Time
+Series: Forecasting, Classification, Imputation,
+and Anomaly Detection
+","Ming Jin, Huan Yee Koh, 
+Qingsong Wen, Daniele Zambon, 
+Cesare Alippi, Geoffrey I. Webb, 
+Irwin King,Shirui Pan",2021,"The problem statement addressed in the research paper is to develop 
+effective methods for modeling complex temporal and spatial dependencies within 
+time series data using Graph Neural Networks (GNNs). These methods aim to 
+improve various tasks, including time series forecasting and anomaly detection, 
+by leveraging GNN-based approaches to capture inter-variable and inter-temporal relations.
+",,,,,,,,,
+Social Networks,"C. Prem Sankar , K. Asokan, K. Satheesh Kumar ,",2015, The problem statement of the paper revolves around understanding the structure and characteristics of the interlocking directorate network in Indian listed companies and its impact on company performance.,"It identifies the major players in the Indian corporate sector based on their position and ties in the network of interlocking directors and firms, also analyzing the existence of a small world structure.The study discusses the causes and effects of interlocking directorates, including the sharing of strategic information, improved company performance, and the diffusion of information through a network"," The paper focuses on the analysis of the interlocking directorate network of National Stock Exchange (NSE) listed Indian companies using social network analysis tools. It examines the structural characteristics of the network, the effects of the network on company and director performance, and the identification of key central actors in the network.","The paper utilizes the affiliation network of National Stock Exchange (NSE) listed 
+Indian companies as the primary data set for analysis.
+ 1) Social network analysis
+  2) Interlocking directorates
+ 3) Component analysis    
+4)Centrality measures     
+","•  The paper focuses on the analysis of the interlocking directorate network of National Stock Exchange (NSE) listed Indian companies using social network analysis tools.
+•  It examines the structural characteristics of the network, the effects of the network on company and director performance, and the identification of key central actors in the network .
+• The paper reports on the existence of a small world structure in the Indian corporate field, as evidenced by the calculated values of mean path length and global clustering coefficient .                                                                                                                                                                            
+                                                                          
+  ","•The paper adopts a social network analysis approach to analyze the interlocking directorate network of National Stock Exchange (NSE) listed Indian companies.
+•The authors utilize tools of social network analysis to examine the structural characteristics of the network, identify clusters, and calculate centrality measures.
+• The methodology involves component analysis, cluster analysis, and identification of top central actors in both the director and company networks.
+","•The paper utilizes social network analysis as the primary research method to analyze the interlocking directorate network of NSE listed Indian companies.
+•The authors employ tools of social network analysis to examine the structural characteristics of the network, identify clusters, and calculate centrality measures.
+•Component analysis is conducted to identify the giant component of the network, which contains the majority of the companies.
+•Cluster analysis is performed to group nodes into different clusters based on their similarities.","•78.5% of the companies in the interlocking directorate network of NSE listed Indian companies fall under one giant component, with the largest island containing 6 companies.
+• Highly boarded directors, constituting just 2.25% of the director population, are associated with 42% of the total listed companies, accounting for 65.5% of the total market capitalization.
+•The calculated values of mean path length and global clustering coefficient provide evidence for the existence of a small world structure in the Indian corporate field.
+•The top central actors in both the director and company networks have been identified.                                                                                                                                                                                                                                                                       ","•The paper does not explicitly discuss the implications or effects of the interlocking directorate network on the performance of companies and directors, despite mentioning that this is one of the objectives of the analysis.
+•The paper does not provide a comparison or benchmarking of the findings with other countries or regions, limiting the understanding of how the Indian corporate sector's interlocking directorate network compares to those in other contexts.
+•The paper does not discuss the potential limitations or biases in the data set used for the analysis, which could affect the generalizability of the findings.
+•The paper does not provide recommendations or suggestions for policymakers or practitioners based on the findings of the analysis.","• The paper analyzes the interlocking directorate network of National Stock Exchange (NSE) listed Indian companies using social network analysis tools. It examines the effects of this network on the performance of companies and directors.
+• The network analysis shows that 78.5% of the companies fall under one giant component, with the largest island containing 6 companies. The highly boarded directors, constituting just 2.25% of the director population, are associated with 42% of the total listed companies, accounting for 65.5% of the total market capitalization.
+• The concentration of power and wealth in the hands of a few individuals in the Indian market is highlighted, with 2.25% of the directors controlling 65.5% of the total market capital of all NSE listed companies.
+• The position of a company in the network has a significant impact on its access to market resources such as capital, status, prestige, and legitimacy within the corporate environment.
+• The paper emphasizes the importance of studying interlocking directorates in developing and emerging economies like India, as most existing studies focus on developed countries."
+Network Analysis of the Stock Market,"Wenyue Sun, Chuan Tian, Guang Yang",2015,"The existing works in stock network analysis have limitations in terms of useful visualizations and providing direct guidance for market performance and investment.Traditional approaches to portfolio management often rely on statistical properties that represent local behavior of stocks, but fail to capture important global properties of the stock market.The paper aims to address these limitations by constructing a network for the US stock market based on correlation of stock returns and applying community detection techniques to identify market sections.","• The paper briefly mentions a literature review related to network analysis in the stock market but does not delve into detailed discussions of the works, potentially limiting the depth of the background research
+•  The paper mentions grouping stocks above 10 billion to decrease the number of nodes and edges in the network, potentially introducing selection bias in the analysis.
+• The paper lacks a detailed description of the methodology used for community detection techniques and the application of network analysis in portfolio management, which could limit reproducibility and understanding of the study.","• Visualizations generated using network analysis software, Gephi, provide an intuitive way to understand the overall correlation structure of different public stocks and identify key market segments.
+• The established stock network can potentially be useful for predicting stock market performance from macroeconomic factors, as observed during the US credit crisis spreading.
+• The established stock network can potentially be useful for predicting stock market performance from macroeconomic factors, as observed during the US credit crisis spreading.","•The  dataset used in the study is the daily stock data obtained from the Center for Research in Security Prices (CRSP) and WRDS.
+• The dataset covers the period from July 1, 2007, to July 1, 2008, and is used to compute the cross-correlation of stock returns and construct the correlation network.
+• NAS-
+DAQ and S&P 500
+ • Gephi, an open-source network analysis and visualization software.
+ • Network analysis techniques,community detection,centrality measures      "," • The paper focuses on the construction and analysis of a network for the US stock market based on the correlation of different stock returns.
+ • Community detection techniques are applied to the constructed correlation network to identify market sections. The resulting communities align with the identified market sections based on the Standard Industrial Classification code, indicating that stocks within the same sector tend to have similar patterns.
+ • The paper also explores the use of network analysis in stock market monitoring, predicting stock market performance, and portfolio management.
+• Network properties such as degree centrality, betweenness centrality, and closeness centrality are used to extract global properties of the stock market and create investment portfolios. The performance of these portfolios is compared with standard market indices such as NASDAQ and S&P 500.
+"," • The paper aims to analyze the stock market using network analysis techniques based on the correlation of different stock returns.
+ • The authors construct a correlation network for the US stock market and apply community detection techniques to identify market sections.
+ • They use an open-source network analysis and visualization software, Gephi, to generate visualizations of the return correlations among various public stocks.
+• The paper also explores the application of network analysis in portfolio management, comparing the performance of investment portfolios created using network properties with standard market indices such as NASDAQ and S&P 500."," • The paper utilizes network analysis techniques to study the stock market.
+ • The authors construct a correlation network for the US stock market based on the correlation of different stock returns.
+ • Community detection techniques are applied to identify market sections within the constructed correlation network.
+ • The paper also explores the application of network analysis in portfolio management.
+• The performance of investment portfolios created using network properties is compared with standard market indices such as NASDAQ and S&P 500.","• The constructed correlation network for the US stock market based on stock returns shows consistent communities with identified market sections using Standard Industrial Classification code. This indicates that stocks within the same sector tend to have similar patterns.
+• Visualizations of the return correlations among various public stocks offer an intuitive way to understand the overall correlation structure and identify key market segments. This can be useful for market monitoring. 
+• Preliminary studies on creating investment portfolios using network properties of different stocks show that with proper weights given to top centrality nodes, the portfolios can outperform the S&P 500 for certain periods.
+• The paper emphasizes the importance of considering global properties of stocks within a market, such as degree centrality, betweenness centrality, and closeness centrality, in portfolio management.
+
+                                                                                                                                                                                         ","• The paper does not explore the impact of different correlation measures on establishing connections between nodes in the stock network.
+
+• The paper does not discuss the limitations or challenges of using network analysis techniques for stock market prediction or portfolio management.
+• The paper does not address the potential limitations or biases in using correlation-based networks for studying stock market behavior.
+• The paper does not provide a comprehensive review of previous works related to network analysis in the stock market, which could have provided a more thorough understanding of the existing research landscape.","• The visualization results generated using Gephi provide an intuitive way to understand the overall correlation structure of different public stocks and identify key market segments, which can be valuable for market monitoring .
+• The paper explores the potential of the established stock network for stock market performance prediction and portfolio management. It shows that by considering network properties of different stocks, investment portfolios can outperform standard market indices like NAS-DAQ and S&P 500 for certain periods
+• However, the paper lacks a comprehensive literature review and does not discuss the limitations or challenges of using network analysis techniques for stock market prediction and portfolio management .
+• Further research is needed to explore the impact of different correlation measures, address potential biases in correlation-based networks, and provide a more thorough understanding of the existing research landscape 
+"
+"Predicting stock market movements
+using network science: an information
+theoretic approach",Minjun Kim and Hiroki Sayama,2017,"• The research aims to address the challenge of making reliable predictions of future movements in the Standard & Poor's 500 Index (S&P 500), which is a highly complex system with no clear pattern in price movements.
+• The complex nature of the stock market makes it difficult to forecast its future movements accurately.
+• The research focuses on constructing time-series complex networks of S&P 500 underlying companies and using network science and information theory to develop a method for predicting the future movements of the S&P 500.","• The study addresses the challenge of reliably predicting the future movements of the S&P 500, a highly complex system with no clear pattern in price movements.
+• It introduces a new method to forecast future movements by constructing time-series complex networks of S&P 500 underlying companies, demonstrating the importance of network analysis in predicting stock market movements.
+• 
+","• The stock market is a highly complex system with no clear pattern in price movements, making it challenging to predict future movements accurately.
+• The research proposes a new method for forecasting the future movements of the S&P 500 by constructing time-series complex networks of S&P 500 underlying companies and using mutual information as link weights.
+• Incorporating network measurements into ARIMA models improves the accuracy of index predictions, as shown by comparing the predictive power of ARIMA models with and without network measurements.
+"," • The research used stock price records for 475 companies in the S&P 500 index, ranging from September 22nd, 2016 to October 11th, 2016, with 5340 one-minute interval closed prices for each company.
+• Network science,Time-series complex network
+• polynomial regression and linear regression
+• ARIMA model","• The paper aims to forecast the future movements of the S&P 500 by constructing time-series complex networks of S&P 500 underlying companies using mutual information as link weights
+• The research discusses network analysis that forecasts future amplitudes of the S&P 500 changes to the one-hour future and helps improve the performances of ARIMA models
+• Tools such as network science, information theory-based approaches, and statistical measures in Python were used for the analysis","• The study follows a systematic approach, starting with acquiring raw stock price records, pre-processing the data, computing pairwise mutual information of the stocks in the S&P 500, constructing networks using the mutual information as link weights, and building predictors using network centrality and modularity
+• The researchers used the mutual information as link weights to capture the non-linear correlation of stock price movements and split the 5340-minute long time-series data into 60-minute long non-overlapping windows for each stock to compute mutual information of every stock pair
+• The study aims to prove that network measurements indeed improve the ARIMA models and discusses the network analysis that forecasts future amplitudes of the S&P 500 changes to the one-hour future","• The study uses network science and information theory-based approaches to construct time-series complex networks of S&P 500 underlying companies using mutual information as link weights 
+• The researchers compute the pairwise mutual information of the stocks in the S&P 500 and construct networks using the mutual information as link weights
+• They split the 5340-minute long time-series data into 60-minute long non-overlapping windows for each stock to compute mutual information of every stock pair","• Changes in the strength distributions of the networks provide important information on the network's future movements, and the study built several metrics using the strength distributions and network measurements such as centrality
+• The study found that adding network measurements into the ARIMA models improves the model accuracy, which is useful for financial market policy makers and quantitative investors
+• The study tested various metrics for their prediction performance against the actual changes, squares of the changes, and absolute values of the changes in the S&P 500 index, using second and third-order polynomial regression and simple linear regressions for fitting tests ","• Limited previous studies conducted in terms of financial market time-series forecasting using network analysis .
+• Previous studies did not show whether network analysis helps improve the performances of financial market time-series forecasting models
+• The paper does not discuss the limitations or potential future research directions, leaving room for further exploration in these areas.","• Linear combinations of metrics are used to predict the amplitude of changes in the S&P 500, showing a quadratic relationship with the changes .
+• The study found that changes in the strength distributions of the networks provide important information on the network's future movements .
+• The findings are valuable for financial market policy makers and quantitative investors to enhance forecasting models"
